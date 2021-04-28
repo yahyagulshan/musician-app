@@ -8,6 +8,10 @@ const schema = require('../store/schema');
 router.get('/health', (req, res) => {
   res.status('200').send("Status: ok!");
 });
+router.get('/all', (req, res) => {
+res.status('200').send("200 - ok");
+});
+
 
 // retrieve all musicians from data store
 router.get('/all', (req, res) => {
